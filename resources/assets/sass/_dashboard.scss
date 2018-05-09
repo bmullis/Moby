@@ -1,0 +1,100 @@
+.dashboard {
+    background: $color-light-bg;
+    .card {
+        border: none;
+        border-radius: 9px;
+        box-shadow: 0 0 30px transparentize(#1F3349, .88);
+        margin-bottom: 60px;
+        .card-header {
+            background-color: $color-black;
+            border-radius: 9px 9px 0 0;
+            color: $color-white;
+        }
+    }
+    #map {
+        border-radius: 9px;
+        height: 770px;
+        position: relative;
+        .btnAddNew {
+            background-color: $color-dark-blue;
+            border-radius: 500px;
+            bottom: 20px;
+            color: $color-white;
+            cursor: pointer;
+            font-size: 18px;
+            height: 60px;
+            left: 20px;
+            padding-top: 21px;
+            position: absolute;
+            text-align: center;
+            width: 60px;
+            z-index: 99;
+        }
+        .addNewMarker {
+            background: $color-black;
+            bottom: 100px;
+            font-family: $font-family-sans-serif;
+            left: 0;
+            padding: 15px;
+            position: absolute;
+            width: 320px;
+            z-index: 99;
+            h3 {
+                color: $color-white;
+                padding: 10px 0 10px 0;
+                text-align: center;
+            }
+            label {
+                color: $color-white - #222;
+                line-height: 1.3em;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            input {
+                margin-bottom: 10px;
+                transition: all .1s ease-out;
+            }
+            button {
+                border-radius: 3px;
+                display: block;
+                margin-top: 10px;
+                width: 100%;
+            }
+            .addNewMarkerTip {
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-top: 15px solid $color-black;
+                position: absolute;
+                bottom: -13px;
+                left: 36px;
+            }
+        }
+        .mapboxgl-popup-content {
+            background-color: $color-black;
+            color: $color-white;
+            font-family: $font-family-sans-serif;
+            p {
+                margin: 5px 0 0 0;
+            }
+        }
+        .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+        .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
+        .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+            border-bottom-color: $color-black;
+        }
+        .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+        .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+        .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+            border-top-color: $color-black;
+        }
+        .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+            border-right-color: $color-black;
+        }
+        .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+            border-left-color: $color-black;
+        }
+        .mapboxgl-ctrl-bottom-left {
+            display: none;
+        }
+    }
+}

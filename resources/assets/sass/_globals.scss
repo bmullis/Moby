@@ -1,0 +1,57 @@
+body {
+    font-size: 15px;
+    h1 {
+        font-family: $font-header;
+        font-size: 3em;
+        font-weight: 100;
+    }
+    h2 {
+        font-family: $font-header;
+        font-size: 1.75em;
+        font-weight: normal;
+        font-style: italic;
+    }
+    h3 {
+        font-weight: 300;
+        font-size: 1.6em;
+        margin: 0;
+    }
+    .btn {
+        border-radius: 500px;
+        font-family: $font-family-sans-serif;
+        font-weight: bold;
+    }
+    .btn-primary {
+        background: $color-light-green;
+        border: $color-light-green;
+        &:hover, &:active, &:focus {
+            background: $color-light-green - #222;
+        }
+    }
+    .btn-info {
+        background: $color-light-blue;
+        border: $color-light-blue;
+        &:hover, &:active, &:focus {
+            background: $color-light-blue - #222;
+        }
+    }
+    .btn-md {
+        padding: 10px 30px;
+    }
+    img {
+        max-width: 100%;
+    }
+    .jumbotron {
+        border-radius: 0;
+    }
+}
+
+.success {
+    background-color: #6CC070 !important;
+}
+
+@media screen and (min-width: 1500px) {
+    .container {
+        max-width: 1400px;
+    }
+}
